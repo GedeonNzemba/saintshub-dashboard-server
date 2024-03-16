@@ -36,7 +36,8 @@ interface Songs {
     songUrl: string;
   }
   
- export interface ChurchDoc extends Document {
+export interface ChurchDoc extends Document {
+  logo: string;
     name: string;
     principal: Principal;
     location: string;
@@ -48,7 +49,8 @@ interface Songs {
     songs: Songs[];
   }
 
-  const ChurchSchema: Schema = new Schema ({
+const ChurchSchema: Schema = new Schema({
+    logo: {type: String, required: true},
     name: { type: String, required: true },
     principal: { type: Object, required: true },
     location: { type: String, required: true },
