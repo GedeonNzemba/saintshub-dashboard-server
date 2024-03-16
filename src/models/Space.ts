@@ -37,7 +37,6 @@ interface Songs {
   }
   
 export interface ChurchDoc extends Document {
-  logo: string;
     name: string;
     principal: Principal;
     location: string;
@@ -50,7 +49,6 @@ export interface ChurchDoc extends Document {
   }
 
 const ChurchSchema: Schema = new Schema({
-    logo: {type: String, required: true},
     name: { type: String, required: true },
     principal: { type: Object, required: true },
     location: { type: String, required: true },
