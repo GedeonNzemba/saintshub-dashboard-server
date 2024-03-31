@@ -25,7 +25,7 @@ const MONGODB_URI =
 const connectDB = async () => {
   try {
     await mongoose.connect(
-      "mongodb+srv://capetowntabernacle:EmqmrTUTE9uA9geZ@cluster0.4doa5l1.mongodb.net/?retryWrites=true&w=majority",
+      MONGODB_URI,
       {
         useNewUrlParser: true,
         useUnifiedTopology: true,
