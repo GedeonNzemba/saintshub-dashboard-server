@@ -10,6 +10,7 @@ export interface UserDocument extends Document {
     public_id: string;
     url: string;
   };
+  admin: boolean;
 }
 
 const UserSchema = new Schema<UserDocument>({
@@ -21,6 +22,7 @@ const UserSchema = new Schema<UserDocument>({
     public_id: { type: String, required: true },
     url: { type: String, required: true },
   },
+  admin: {type: Boolean, required: false}
 });
 
 export default mongoose.model<UserDocument>("User", UserSchema);

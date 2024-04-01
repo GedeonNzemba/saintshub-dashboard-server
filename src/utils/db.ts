@@ -20,7 +20,7 @@
 import mongoose, { ConnectOptions } from "mongoose";
 
 const MONGODB_URI =
-  "mongodb+srv://nzemba48:tUdoYAgecsDTc8s6@cluster0.cxgzddn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+  "mongodb+srv://saintshubapp:gnzemba@cluster0.wwquqs3.mongodb.net/?retryWrites=true&w=majority";
 
 const connectDB = async () => {
   try {

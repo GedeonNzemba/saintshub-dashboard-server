@@ -87,6 +87,7 @@ router.post("/signup", async (req, res) => {
         public_id: uuid.v4(),
         url: avatar,
       },
+      admin: false
     });
 
     await newUser.save();
