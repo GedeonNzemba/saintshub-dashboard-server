@@ -42,4 +42,4 @@ const getChurch = async (req: AuthRequest, res: Response) => {
     }
 };
   
-export default {getAllChurch};
+export default {getAllChurch, getChurch};

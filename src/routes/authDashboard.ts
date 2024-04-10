@@ -41,6 +41,7 @@ router.patch("/churches/:id/:field", async (req, res) => {
 });
 
 router.get("/churches", authMiddleware, dashboardController.getAllChurch);
+router.get("/church", authMiddleware, dashboardController.getChurch);
 
 
 export default router;
